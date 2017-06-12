@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_choice action="DELETE" field="category" table="x_vivso_wfm_workforce_management" version="3">
+        <sys_choice_set action="DELETE">
+            <element>category</element>
+            <name>x_vivso_wfm_workforce_management</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>John.Knudsen</sys_created_by>
+            <sys_created_on>2017-06-01 19:01:27</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_id>6c4a4ada134b32001c24bda12244b0ad</sys_id>
+            <sys_mod_count>39</sys_mod_count>
+            <sys_name>category</sys_name>
+            <sys_package display_value="Workforce Management" source="x_vivso_wfm">08fd6dd2134b32001c24bda12244b038</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="Workforce Management">08fd6dd2134b32001c24bda12244b038</sys_scope>
+            <sys_update_name>sys_choice_x_vivso_wfm_workforce_management_category</sys_update_name>
+            <sys_updated_by>John.Knudsen</sys_updated_by>
+            <sys_updated_on>2017-06-01 19:26:12</sys_updated_on>
+        </sys_choice_set>
+    </sys_choice>
+</record_update>

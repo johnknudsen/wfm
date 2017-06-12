@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_vivso_wfm.WFMCatalogItem</api_name>
+        <client_callable>false</client_callable>
+        <description/>
+        <name>WFMCatalogItem</name>
+        <script><![CDATA[var WFMCatalogItem = Class.create();
+WFMCatalogItem.prototype = {
+	initialize: function() {
+	},
+	
+	catItemSubmit: function(current, producer,gs) {
+		var str = producer.u_category.getDisplayValue() + " request";
+		
+		if (current.u_requested_for) {
+			str += " for " + current.u_requested_for.getDisplayValue();
+		}
+		
+		current.short_description = str;
+		
+		var str_updates = '';
+		
+		if (producer.updates_needed) {
+			str_updates += producer.updates_needed;
+			if (producer.updates_needed_2)	{
+				str_updates += "\n" + producer.updates_needed_2;
+				if (producer.updates_needed_3) {
+					str_updates += "\n" + producer.updates_needed_3;
+					if (producer.updates_needed_4)	{
+						str_updates += "\n" + producer.updates_needed_4;
+						
+					}
+					
+				}
+			}
+			
+		}
+		current.u_schedule_change_info = str_updates;
+		
+		var str_access = '';
+		
+		if (producer.access_needed_choice_1) {
+			gs.info("access_needed_choice_1 = " + producer.access_needed_choice_1);
+			str_access += this._getQuestionLabel('access_needed_choice_1', producer) + ", ";
+			gs.info ("str_access = " + str_access);
+		}
+			
+// 		if (producer.access_needed_choice_2)
+// 			str_access += this._getQuestionLabel('access_needed_choice_2', current) + ", ";
+// 		if (producer.access_needed_choice_3)
+// 			str_access += this._getQuestionLabel('access_needed_choice_3', current) + ", ";
+// 		if (producer.access_needed_choice_4)
+// 			str_access += this._getQuestionLabel('access_needed_choice_4', current) + ", ";
+// 		if (producer.access_needed_choice_5)
+// 			str_access += this._getQuestionLabel('access_needed_choice_5', current) + ", ";
+// 		if (producer.access_needed_choice_6)
+// 			str_access += this._getQuestionLabel('access_needed_choice_6', current) + ", ";
+		
+		current.u_access_needed = str_access;
+	},
+	
+	_getQuestionLabel: function(key, producer) {
+		var v = producer.key;
+		gs.info("v = " + v);
+		return v.getGlideObject().getQuestion().getLabel();
+		
+		
+	},
+	
+	type: 'WFMCatalogItem'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>John.Knudsen</sys_created_by>
+        <sys_created_on>2017-06-09 14:23:33</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>ee27d67013dff2001c24bda12244b0e1</sys_id>
+        <sys_mod_count>18</sys_mod_count>
+        <sys_name>WFMCatalogItem</sys_name>
+        <sys_package display_value="Workforce Management" source="x_vivso_wfm">08fd6dd2134b32001c24bda12244b038</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Workforce Management">08fd6dd2134b32001c24bda12244b038</sys_scope>
+        <sys_update_name>sys_script_include_ee27d67013dff2001c24bda12244b0e1</sys_update_name>
+        <sys_updated_by>John.Knudsen</sys_updated_by>
+        <sys_updated_on>2017-06-09 21:20:45</sys_updated_on>
+    </sys_script_include>
+</record_update>

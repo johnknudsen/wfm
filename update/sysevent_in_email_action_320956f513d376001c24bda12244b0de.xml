@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update sys_domain="global" table="sysevent_in_email_action">
+    <sysevent_in_email_action action="INSERT_OR_UPDATE">
+        <action>record_action</action>
+        <active>false</active>
+        <assignment_operator/>
+        <condition_script/>
+        <description/>
+        <event_name>email.read</event_name>
+        <filter_condition table="sys_email">directLIKEworkforcesolar@vivintsolar.com^ORblind_copiedLIKEworkforcesolar@vivintsolar.com^ORcopiedLIKEworkforcesolar@vivintsolar.com^EQ<item endquery="false" field="direct" goto="false" newquery="false" operator="LIKE" or="false" value="workforcesolar@vivintsolar.com"/>
+            <item endquery="false" field="blind_copied" goto="false" newquery="false" operator="LIKE" or="true" value="workforcesolar@vivintsolar.com"/>
+            <item endquery="false" field="copied" goto="false" newquery="false" operator="LIKE" or="true" value="workforcesolar@vivintsolar.com"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </filter_condition>
+        <from/>
+        <name>FWD Workforcesolar</name>
+        <order>100</order>
+        <reply_email/>
+        <required_roles/>
+        <script><![CDATA[/* ===START WATCH LIST=== */
+
+//1. Query to see if sender is a user; add email to watch list if not
+var usr = new GlideRecord('sys_user');
+usr.addQuery('email', email.origemail);
+usr.query();
+
+var sender = email.origemail.toLowerCase();
+if((sender.indexOf('workforcesolar') > -1) || (sender.indexOf('@service-now.com') > -1)) {
+	//no action
+}
+else {
+	if(usr.getRowCount() == 0){
+		current.watch_list = email.origemail; //add unknown sender email
+	}
+}
+
+//2. Add recipients to watch list
+var wList = current.watch_list;
+var rarray = email.recipients_array;
+var instanceEmail = gs.getProperty('glide.email.user'); //servicedesk@vivintsolar.com
+
+for (var i = 0; i < rarray.length; i++) {
+	var recipient = rarray[i];
+	
+	var receiver = recipient.toLowerCase();
+	if((receiver.indexOf('@service-now.com') > -1) || (receiver.indexOf('workforcesolar') > -1) || recipient == instanceEmail) {
+		//no action
+	}
+	else {
+		//Check to see if this is a user address...and if so add to the watch list
+		var gr = new GlideRecord('sys_user');
+		gr.addQuery('email', recipient);
+		gr.query();
+		if (gr.next()) {
+			// It's a user
+			if(wList != "") {
+				wList = (wList + "," + gr.sys_id);
+			} else {
+				wList = gr.sys_id;
+			}
+		}
+		else {
+			//It's not a user so just add the address to the list
+			if(wList != "") {
+				wList = (wList + "," + recipient);
+			} else {
+				wList = recipient;
+			}
+		}
+	}
+}
+
+current.watch_list = wList;
+/* ===END WATCH LIST=== */]]></script>
+        <stop_processing>false</stop_processing>
+        <sys_class_name>sysevent_in_email_action</sys_class_name>
+        <sys_created_by>John.Knudsen</sys_created_by>
+        <sys_created_on>2017-06-12 17:04:47</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>320956f513d376001c24bda12244b0de</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>FWD Workforcesolar</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Workforce Management" source="x_vivso_wfm">08fd6dd2134b32001c24bda12244b038</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Workforce Management">08fd6dd2134b32001c24bda12244b038</sys_scope>
+        <sys_update_name>sysevent_in_email_action_320956f513d376001c24bda12244b0de</sys_update_name>
+        <sys_updated_by>John.Knudsen</sys_updated_by>
+        <sys_updated_on>2017-06-12 17:04:47</sys_updated_on>
+        <table>x_vivso_wfm_workforce_management</table>
+        <template>descriptionDYNAMIC367bf121ef3221002841f7f775c0fbe2^short_descriptionDYNAMICb637bd21ef3221002841f7f775c0fbb6^assignment_group=f7c75a16138b32001c24bda12244b03d^EQ</template>
+        <type>forward</type>
+    </sysevent_in_email_action>
+</record_update>

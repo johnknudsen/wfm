@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="catalog_ui_policy_action">
+    <catalog_ui_policy_action action="INSERT_OR_UPDATE">
+        <catalog_item display_value="Contact Center Help">e0c19a2f13c3b2001c24bda12244b098</catalog_item>
+        <catalog_variable>IO:3adb93b313cbb2001c24bda12244b021</catalog_variable>
+        <disabled>ignore</disabled>
+        <field/>
+        <mandatory>ignore</mandatory>
+        <sys_class_name>catalog_ui_policy_action</sys_class_name>
+        <sys_created_by>John.Knudsen</sys_created_by>
+        <sys_created_on>2017-06-06 18:54:03</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>0278ffbf13cbb2001c24bda12244b004</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>updates_needed_2</sys_name>
+        <sys_package display_value="Workforce Management" source="x_vivso_wfm">08fd6dd2134b32001c24bda12244b038</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Workforce Management">08fd6dd2134b32001c24bda12244b038</sys_scope>
+        <sys_update_name>catalog_ui_policy_action_0278ffbf13cbb2001c24bda12244b004</sys_update_name>
+        <sys_updated_by>John.Knudsen</sys_updated_by>
+        <sys_updated_on>2017-06-06 18:54:03</sys_updated_on>
+        <table/>
+        <ui_policy display_value="Update Box 1">4d387fbf13cbb2001c24bda12244b053</ui_policy>
+        <variable>updates_needed_2</variable>
+        <variable_set/>
+        <visible>true</visible>
+    </catalog_ui_policy_action>
+</record_update>

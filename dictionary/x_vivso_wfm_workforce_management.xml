@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element audit="true" extends="service_task" label="Workforce Management" max_length="40" name="x_vivso_wfm_workforce_management" sizeclass="14" type="collection">
+        <element label="Additional Agents Needing Info" max_length="32" name="u_add_agents_needing_info" reference="sys_user" reference_qual="active=true^EQ" reference_qual_condition="active=true^EQ" type="reference"/>
+        <element label="Auto-Attendant" max_length="40" name="u_auto_attendant" type="boolean"/>
+        <element label="inContact" max_length="40" name="u_incontact" type="boolean"/>
+        <element label="inView" max_length="40" name="u_inview" type="boolean"/>
+        <element label="NICE" max_length="40" name="u_nice" type="boolean"/>
+        <element choice="1" label="Password Reset For" max_length="40" name="u_password_reset" type="choice">
+            <choice>
+                <element label="Auto-Attendant" value="auto_attendant"/>
+                <element label="inContact" value="incontact"/>
+                <element label="InView" value="inview"/>
+                <element label="NICE" value="nice"/>
+                <element label="VCaaS" value="vcaas"/>
+                <element label="WebStation" value="webstation"/>
+            </choice>
+        </element>
+        <element label="Schedule Change Info" max_length="4000" name="u_schedule_change_info" type="string"/>
+        <element label="VCaaS" max_length="40" name="u_vcaas" type="boolean"/>
+        <element label="VCaaS Login" max_length="40" name="u_vcaas_login" type="string"/>
+        <element label="WebStation" max_length="40" name="u_webstation" type="boolean"/>
+    </element>
+</database>

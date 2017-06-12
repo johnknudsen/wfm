@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_ui_form_sections form_id="f0718c80131fb2001c24bda12244b05b" sys_domain="global" table="x_vivso_wfm_workforce_management" version="3">
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>0</position>
+            <sys_created_by>John.Knudsen</sys_created_by>
+            <sys_created_on>2017-06-06 19:33:05</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>b8718c80131fb2001c24bda12244b05b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_vivso_wfm_workforce_management" name="x_vivso_wfm_workforce_management" sys_domain="global" view="Default view">f0718c80131fb2001c24bda12244b05b</sys_ui_form>
+            <sys_ui_section caption="NULL" display_value="" name="x_vivso_wfm_workforce_management" sys_domain="global" view="Default view">5e22f596134b32001c24bda12244b037</sys_ui_section>
+            <sys_updated_by>John.Knudsen</sys_updated_by>
+            <sys_updated_on>2017-06-06 19:33:05</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form action="INSERT_OR_UPDATE">
+            <name>x_vivso_wfm_workforce_management</name>
+            <roles/>
+            <sys_class_name>sys_ui_form</sys_class_name>
+            <sys_created_by>John.Knudsen</sys_created_by>
+            <sys_created_on>2017-06-06 19:33:05</sys_created_on>
+            <sys_customer_update>true</sys_customer_update>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>f0718c80131fb2001c24bda12244b05b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_vivso_wfm_workforce_management</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Workforce Management" source="x_vivso_wfm">08fd6dd2134b32001c24bda12244b038</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="Workforce Management">08fd6dd2134b32001c24bda12244b038</sys_scope>
+            <sys_update_name>sys_ui_form_sections_f0718c80131fb2001c24bda12244b05b</sys_update_name>
+            <sys_updated_by>John.Knudsen</sys_updated_by>
+            <sys_updated_on>2017-06-06 19:33:05</sys_updated_on>
+            <sys_user/>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_form>
+    </sys_ui_form_sections>
+</record_update>
