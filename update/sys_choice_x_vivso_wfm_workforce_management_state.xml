@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="state" table="x_vivso_wfm_workforce_management" version="3">
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>state</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>New</label>
+            <language>en</language>
+            <name>x_vivso_wfm_workforce_management</name>
+            <sequence>1</sequence>
+            <sys_created_by>John.Knudsen</sys_created_by>
+            <sys_created_on>2017-06-12 19:51:08</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>220f3eb9131776001c24bda12244b08e</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>John.Knudsen</sys_updated_by>
+            <sys_updated_on>2017-06-12 20:04:30</sys_updated_on>
+            <value>1</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>state</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Assigned</label>
+            <language>en</language>
+            <name>x_vivso_wfm_workforce_management</name>
+            <sequence>2</sequence>
+            <sys_created_by>John.Knudsen</sys_created_by>
+            <sys_created_on>2017-06-12 19:55:04</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>93bf72f9131776001c24bda12244b003</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>John.Knudsen</sys_updated_by>
+            <sys_updated_on>2017-06-12 20:04:32</sys_updated_on>
+            <value>2</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>state</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Pending User Input</label>
+            <language>en</language>
+            <name>x_vivso_wfm_workforce_management</name>
+            <sequence>3</sequence>
+            <sys_created_by>John.Knudsen</sys_created_by>
+            <sys_created_on>2017-06-12 19:55:54</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>e53003f9131776001c24bda12244b0f2</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>John.Knudsen</sys_updated_by>
+            <sys_updated_on>2017-06-12 20:04:35</sys_updated_on>
+            <value>3</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>state</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Resolved</label>
+            <language>en</language>
+            <name>x_vivso_wfm_workforce_management</name>
+            <sequence>4</sequence>
+            <sys_created_by>John.Knudsen</sys_created_by>
+            <sys_created_on>2017-06-12 19:59:11</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>d1f003f9131776001c24bda12244b02d</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>John.Knudsen</sys_updated_by>
+            <sys_updated_on>2017-06-12 20:04:38</sys_updated_on>
+            <value>4</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>state</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Closed</label>
+            <language>en</language>
+            <name>x_vivso_wfm_workforce_management</name>
+            <sequence>5</sequence>
+            <sys_created_by>John.Knudsen</sys_created_by>
+            <sys_created_on>2017-06-12 19:35:24</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>626bf279131776001c24bda12244b079</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>John.Knudsen</sys_updated_by>
+            <sys_updated_on>2017-06-12 20:04:41</sys_updated_on>
+            <value>5</value>
+        </sys_choice>
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>state</element>
+            <name>x_vivso_wfm_workforce_management</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>John.Knudsen</sys_created_by>
+            <sys_created_on>2017-06-12 19:35:24</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_id>458bf279131776001c24bda12244b07b</sys_id>
+            <sys_mod_count>11</sys_mod_count>
+            <sys_name>state</sys_name>
+            <sys_package display_value="Workforce Management" source="x_vivso_wfm">08fd6dd2134b32001c24bda12244b038</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="Workforce Management">08fd6dd2134b32001c24bda12244b038</sys_scope>
+            <sys_update_name>sys_choice_x_vivso_wfm_workforce_management_state</sys_update_name>
+            <sys_updated_by>John.Knudsen</sys_updated_by>
+            <sys_updated_on>2017-06-12 20:04:41</sys_updated_on>
+        </sys_choice_set>
+    </sys_choice>
+</record_update>

@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update sys_domain="global" table="sysevent_email_action">
+    <sysevent_email_action action="INSERT_OR_UPDATE">
+        <action_insert>true</action_insert>
+        <action_update>false</action_update>
+        <active>true</active>
+        <advanced_condition/>
+        <affected_field_on_event/>
+        <collection>x_vivso_wfm_workforce_management</collection>
+        <condition table="x_vivso_wfm_workforce_management">assigned_toISNOTEMPTY^commentsVALCHANGES^EQ<item endquery="false" field="assigned_to" goto="false" newquery="false" operator="ISNOTEMPTY" or="false" value=""/>
+            <item endquery="false" field="comments" goto="false" newquery="false" operator="VALCHANGES" or="false" value=""/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </condition>
+        <content_type>text/html</content_type>
+        <description/>
+        <event_name/>
+        <event_parm_1>false</event_parm_1>
+        <event_parm_2>false</event_parm_2>
+        <exclude_delegates>false</exclude_delegates>
+        <force_delivery>false</force_delivery>
+        <from/>
+        <generation_type>engine</generation_type>
+        <importance/>
+        <include_attachments>false</include_attachments>
+        <item>event.parm1</item>
+        <item_table/>
+        <mandatory>false</mandatory>
+        <message/>
+        <message_html><![CDATA[<html style="font-family: 'Lato', Helvetica, Arial, sans-serif; font-size: 14px; line-height: 1.6em; margin: 0; padding: 0;">
+<head>
+    <meta name="viewport" content="width=device-width">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+</head>
+
+<body bgcolor="#f6f6f6" style="font-family: 'Lato', Helvetica, Arial, sans-serif; font-size: 14px; line-height: 1.6em; height: 100%; -webkit-text-size-adjust: none; width: 100% !important; margin: 0; padding: 0;">
+<style type="text/css">
+.btn-primary a:hover { background-color: #FF8200 !important; border: solid 1px #FF8200 !important; border-width: 10px 20px !important; }
+.details tr:hover { background-color: lightgray !important; }
+></style>
+    
+<!--[if mso]>
+<style type="text/css">
+body, a, p, li, h1, h2, h3, table, td, th {font-family: Helvetica, Arial, sans-serif !important;}
+</style>
+<![endif]-->
+
+    <!-- body -->
+    <table class="body-wrap" bgcolor="#f6f6f6" style="font-family: 'Lato', Helvetica, Arial, sans-serif; font-size: 14px; line-height: 1.6em; width: 100%; margin: 0; padding: 20px;">
+        <tr style="font-family: 'Lato', Helvetica, Arial, sans-serif; font-size: 14px; line-height: 1.6em; margin: 0; padding: 0;">
+            <td style="font-family: 'Lato', Helvetica, Arial, sans-serif; font-size: 14px; line-height: 1.6em; margin: 0; padding: 0;"></td>
+            <td class="container" bgcolor="#FFFFFF" style="font-family: 'Lato', Helvetica, Arial, sans-serif; font-size: 14px; line-height: 1.6em; clear: both !important; display: block !important; max-width: 600px !important; margin: 0 auto; padding: 20px; border: 1px solid #f0f0f0;">
+
+                <!-- content -->
+                <div class="content" style="font-family: 'Lato', Helvetica, Arial, sans-serif; font-size: 14px; line-height: 1.6em; display: block; max-width: 600px; margin: 0 auto; padding: 0;">
+                    <table style="font-family: 'Lato', Helvetica, Arial, sans-serif; font-size: 14px; line-height: 1.6em; width: 100%; margin: 0; padding: 0;">
+                        <tr style="font-family: 'Lato', Helvetica, Arial, sans-serif; font-size: 14px; line-height: 1.6em; margin: 0; padding: 0;">
+                            <td style="font-family: 'Lato', Helvetica, Arial, sans-serif; font-size: 14px; line-height: 1.6em; margin: 0; padding: 0;">
+                                <img src="http://wwwassets.s3.amazonaws.com/global/solar/home/Vivint-Solar-Logo.png" height="40" style="font-family: 'Lato', Helvetica, Arial, sans-serif; font-size: 14px; line-height: 1.6em; margin: 0; padding: 0;">
+                                <h1 style="font-family: 'Lato', Helvetica, Arial, 'Lucida Grande', sans-serif; font-size: 28px; line-height: 1.2em; color: #FF8200; font-weight: 300; margin: 40px 0 10px; padding: 0;">A request for ${number} assigned to you has been updated.</h1>
+                                <p class="larger" style="font-family: 'Lato', Helvetica, Arial, sans-serif; font-size: 18px; line-height: 1.6em; font-weight: normal; margin: 0 0 10px; padding: 0;">${mail_script:last_comment_task}</p>
+                                <br style="font-family: 'Lato', Helvetica, Arial, sans-serif; font-size: 14px; line-height: 1.6em; margin: 0; padding: 0;">
+                               <table class="details" style="font-family: 'Lato', Helvetica, Arial, sans-serif; font-size: 14px; line-height: 1.6em; width: 100%; border-collapse: collapse; margin: 0; padding: 0; border: 1px solid #ddd;">
+                                    <th colspan="2" style="font-family: 'Lato', Helvetica, Arial, sans-serif; font-size: 18px; line-height: 1.6em; color: white; border-collapse: collapse; background-color: #656569; margin: 0; padding: 5px; border: 1px solid #ddd;" bgcolor="#656569">Request Details</th>
+                                   <tr style="font-family: 'Lato', Helvetica, Arial, sans-serif; font-size: 14px; line-height: 1.6em; margin: 0; padding: 0;">   
+                                   <td style="font-family: 'Lato', Helvetica, Arial, sans-serif; font-size: 14px; line-height: 1.6em; border-collapse: collapse; margin: 0; padding: 5px; border: 1px solid #ddd;">Requested For</td>   
+										<td style="font-family: 'Lato', Helvetica, Arial, sans-serif; font-size: 14px; line-height: 1.6em; border-collapse: collapse; margin: 0; padding: 5px; border: 1px solid #ddd;">${u_requested_for}</td>
+                                    </tr> 
+                                      <tr style="font-family: 'Lato', Helvetica, Arial, sans-serif; font-size: 14px; line-height: 1.6em; background-color: #f6f6f6; margin: 0; padding: 0;" bgcolor="#f6f6f6">
+                                        <td style="font-family: 'Lato', Helvetica, Arial, sans-serif; font-size: 14px; line-height: 1.6em; border-collapse: collapse; margin: 0; padding: 5px; border: 1px solid #ddd;">Category</td>   
+										<td style="font-family: 'Lato', Helvetica, Arial, sans-serif; font-size: 14px; line-height: 1.6em; border-collapse: collapse; margin: 0; padding: 5px; border: 1px solid #ddd;">${u_category}</td>
+                                    </tr>
+									<tr style="font-family: 'Lato', Helvetica, Arial, sans-serif; font-size: 14px; line-height: 1.6em; margin: 0; padding: 0;">
+                                        <td colspan="2" style="font-family: 'Lato', Helvetica, Arial, sans-serif; font-size: 14px; line-height: 1.6em; border-collapse: collapse; margin: 0; padding: 5px; border: 1px solid #ddd;">${description}</td>   
+                                    </tr> 
+                                </table>
+                                  <h2 style="font-family: 'Lato', Helvetica, Arial, 'Lucida Grande', sans-serif; font-size: 22px; line-height: 1.2em; color: #FF8200; font-weight: 300; margin: 40px 0 10px; padding: 0;">Previous Comments</h2>
+                                <p style="font-family: 'Lato', Helvetica, Arial, sans-serif; font-size: 14px; line-height: 1.6em; font-weight: normal; margin: 0 0 10px; padding: 0;">${mail_script:all_previous_comments}</p>
+                                <h2 style="font-family: 'Lato', Helvetica, Arial, 'Lucida Grande', sans-serif; font-size: 22px; line-height: 1.2em; color: #FF8200; font-weight: 300; margin: 40px 0 10px; padding: 0;">Worknotes</h2>
+                                <p style="font-family: 'Lato', Helvetica, Arial, sans-serif; font-size: 14px; line-height: 1.6em; font-weight: normal; margin: 0 0 10px; padding: 0;">${mail_script:all_worknotes}</p>
+                                <br style="font-family: 'Lato', Helvetica, Arial, sans-serif; font-size: 14px; line-height: 1.6em; margin: 0; padding: 0;">
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <!-- /content -->
+
+            </td>
+            <td style="font-family: 'Lato', Helvetica, Arial, sans-serif; font-size: 14px; line-height: 1.6em; margin: 0; padding: 0;"></td>
+        </tr>
+        <tr class="footer" style="font-family: 'Lato', Helvetica, Arial, sans-serif; font-size: 8px; line-height: 1.6em; color: #666666; font-style: italic; margin: 0; padding: 0;">
+            <td style="font-family: 'Lato', Helvetica, Arial, sans-serif; font-size: 14px; line-height: 1.6em; margin: 0; padding: 0;"></td>
+            <td align="center" style="font-family: 'Lato', Helvetica, Arial, sans-serif; font-size: 14px; line-height: 1.6em; margin: 0; padding: 0;">
+                <p style="font-family: 'Lato', Helvetica, Arial, sans-serif; font-size: 14px; line-height: 1.6em; font-weight: normal; margin: 0 0 10px; padding: 0;">You are receiving this because you are assigned to a request that was updated.</p>
+            </td>
+            <td style="font-family: 'Lato', Helvetica, Arial, sans-serif; font-size: 14px; line-height: 1.6em; margin: 0; padding: 0;"></td>
+        </tr>
+    </table>
+</body>
+
+</html>]]></message_html>
+        <message_list/>
+        <message_text/>
+        <name>Task commented for assignee</name>
+        <omit_watermark>false</omit_watermark>
+        <order>100</order>
+        <push_message_only>false</push_message_only>
+        <recipient_fields/>
+        <recipient_groups/>
+        <recipient_users/>
+        <reply_to/>
+        <send_self>true</send_self>
+        <sms_alternate/>
+        <style/>
+        <subject/>
+        <subscribable>false</subscribable>
+        <sys_class_name>sysevent_email_action</sys_class_name>
+        <sys_created_by>John.Knudsen</sys_created_by>
+        <sys_created_on>2017-06-12 18:47:50</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>dca0b67d13d376001c24bda12244b0bd</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>Task commented for assignee</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Workforce Management" source="x_vivso_wfm">08fd6dd2134b32001c24bda12244b038</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Workforce Management">08fd6dd2134b32001c24bda12244b038</sys_scope>
+        <sys_update_name>sysevent_email_action_dca0b67d13d376001c24bda12244b0bd</sys_update_name>
+        <sys_updated_by>John.Knudsen</sys_updated_by>
+        <sys_updated_on>2017-06-13 21:06:15</sys_updated_on>
+        <sys_version>2</sys_version>
+        <template/>
+        <type>email</type>
+        <weight>0</weight>
+    </sysevent_email_action>
+</record_update>
