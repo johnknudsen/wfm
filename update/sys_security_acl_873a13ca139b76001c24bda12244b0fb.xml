@@ -13,7 +13,7 @@
         <sys_class_name>sys_security_acl</sys_class_name>
         <sys_created_by>John.Knudsen</sys_created_by>
         <sys_created_on>2017-06-13 16:28:05</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
+        <sys_customer_update>false</sys_customer_update>
         <sys_id>873a13ca139b76001c24bda12244b0fb</sys_id>
         <sys_mod_count>1</sys_mod_count>
         <sys_name>x_vivso_wfm_workforce_management.description</sys_name>

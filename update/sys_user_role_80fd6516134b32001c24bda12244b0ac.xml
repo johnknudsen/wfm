@@ -13,7 +13,7 @@
         <sys_class_name>sys_user_role</sys_class_name>
         <sys_created_by>John.Knudsen</sys_created_by>
         <sys_created_on>2017-06-01 16:57:43</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
+        <sys_customer_update>false</sys_customer_update>
         <sys_id>80fd6516134b32001c24bda12244b0ac</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>x_vivso_wfm.user</sys_name>

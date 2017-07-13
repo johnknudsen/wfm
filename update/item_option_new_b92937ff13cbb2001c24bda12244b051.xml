@@ -3,7 +3,7 @@
     <item_option_new action="INSERT_OR_UPDATE">
         <active>true</active>
         <attributes/>
-        <cat_item display_value="Contact Center Help">e0c19a2f13c3b2001c24bda12244b098</cat_item>
+        <cat_item display_value="Workforce Management">e0c19a2f13c3b2001c24bda12244b098</cat_item>
         <category/>
         <choice_direction>down</choice_direction>
         <choice_field/>
@@ -57,7 +57,7 @@
         <sys_class_name>item_option_new</sys_class_name>
         <sys_created_by>John.Knudsen</sys_created_by>
         <sys_created_on>2017-06-06 18:56:50</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
+        <sys_customer_update>false</sys_customer_update>
         <sys_id>b92937ff13cbb2001c24bda12244b051</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>formatter3</sys_name>

@@ -11,7 +11,8 @@
         <delivery_plan/>
         <delivery_plan_script/>
         <delivery_time>1970-01-03 00:00:00</delivery_time>
-        <description/>
+        <description><![CDATA[<h1 class="text-center">REPORT WFM ISSUES OR CHANGES</h1>
+<div class="description">Use this page to report any issues or changes to the Workforce Management team.<br />You will receive email update(s), or you may check the status by visiting My Requests &gt; Workforce Management.</div>]]></description>
         <entitlement_script/>
         <group/>
         <icon/>
@@ -24,7 +25,7 @@
         <mobile_picture/>
         <mobile_picture_type>use_desktop_picture</mobile_picture_type>
         <model/>
-        <name>Contact Center Help</name>
+        <name>Workforce Management</name>
         <no_cart>false</no_cart>
         <no_order>false</no_order>
         <no_order_now>false</no_order_now>
@@ -40,10 +41,12 @@
         <recurring_frequency/>
         <recurring_price>0</recurring_price>
         <roles/>
-        <sc_catalogs/>
+        <sc_catalogs>e0d08b13c3330100c8b837659bba8fb4</sc_catalogs>
         <sc_ic_item_staging/>
         <sc_ic_version/>
-        <script><![CDATA[new x_vivso_wfm.WFMCatalogItem().catItemSubmit(current, producer, gs);]]></script>
+        <script><![CDATA[new x_vivso_wfm.WFMCatalogItem().catItemSubmit(current, producer, gs);
+producer.redirect='wfm_requests.do';
+gs.addInfoMessage('Your request has been logged');]]></script>
         <short_description/>
         <start_closed>false</start_closed>
         <sys_class_name>sc_cat_item_producer</sys_class_name>
@@ -51,15 +54,15 @@
         <sys_created_on>2017-06-05 17:07:40</sys_created_on>
         <sys_customer_update>true</sys_customer_update>
         <sys_id>e0c19a2f13c3b2001c24bda12244b098</sys_id>
-        <sys_mod_count>3</sys_mod_count>
-        <sys_name>Contact Center Help</sys_name>
+        <sys_mod_count>9</sys_mod_count>
+        <sys_name>Workforce Management</sys_name>
         <sys_package display_value="Workforce Management" source="x_vivso_wfm">08fd6dd2134b32001c24bda12244b038</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="Workforce Management">08fd6dd2134b32001c24bda12244b038</sys_scope>
         <sys_update_name>sc_cat_item_producer_e0c19a2f13c3b2001c24bda12244b098</sys_update_name>
         <sys_updated_by>John.Knudsen</sys_updated_by>
-        <sys_updated_on>2017-06-09 16:58:33</sys_updated_on>
+        <sys_updated_on>2017-07-13 14:48:49</sys_updated_on>
         <table_name>x_vivso_wfm_workforce_management</table_name>
         <template/>
         <type>item</type>

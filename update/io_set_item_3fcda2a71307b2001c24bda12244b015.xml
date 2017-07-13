@@ -2,11 +2,11 @@
 <record_update table="io_set_item">
     <io_set_item action="INSERT_OR_UPDATE">
         <order>5000</order>
-        <sc_cat_item display_value="Contact Center Help">e0c19a2f13c3b2001c24bda12244b098</sc_cat_item>
+        <sc_cat_item display_value="Workforce Management">e0c19a2f13c3b2001c24bda12244b098</sc_cat_item>
         <sys_class_name>io_set_item</sys_class_name>
         <sys_created_by>John.Knudsen</sys_created_by>
         <sys_created_on>2017-06-05 18:49:10</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
+        <sys_customer_update>false</sys_customer_update>
         <sys_id>3fcda2a71307b2001c24bda12244b015</sys_id>
         <sys_mod_count>2</sys_mod_count>
         <sys_name>Description, Watchlist and Attachments.Contact Center Help</sys_name>

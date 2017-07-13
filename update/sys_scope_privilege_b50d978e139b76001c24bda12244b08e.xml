@@ -7,7 +7,7 @@
         <sys_class_name>sys_scope_privilege</sys_class_name>
         <sys_created_by>Reid.Willardson</sys_created_by>
         <sys_created_on>2017-06-13 16:40:17</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
+        <sys_customer_update>false</sys_customer_update>
         <sys_id>b50d978e139b76001c24bda12244b08e</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>SysUserList</sys_name>

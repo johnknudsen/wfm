@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <database>
-    <element audit="true" extends="service_task" label="Workforce Management" max_length="40" name="x_vivso_wfm_workforce_management" sizeclass="16" type="collection">
+    <element audit="true" extends="service_task" label="WFM Request" max_length="40" name="x_vivso_wfm_workforce_management" sizeclass="31" type="collection">
         <element label="Additional Agents Needing Info" max_length="4000" name="u_add_agents_needing_info" reference="sys_user" type="glide_list"/>
         <element label="Auto-Attendant" max_length="40" name="u_auto_attendant" type="boolean"/>
         <element label="inContact" max_length="40" name="u_incontact" type="boolean"/>
@@ -16,6 +16,16 @@
                 <element label="WebStation" value="webstation"/>
             </choice>
         </element>
+        <element choice="1" label="Previous Request?" max_length="40" name="u_previous" type="choice">
+            <choice>
+                <element label="Yes" sequence="100" value="yes"/>
+                <element label="No" sequence="200" value="no"/>
+            </choice>
+        </element>
+        <element label="Previous Request Number" max_length="32" name="u_previous_incident" reference="x_vivso_wfm_workforce_management" type="reference"/>
+        <element default="0" label="Reopen Count" max_length="40" name="u_reopen_count" type="integer"/>
+        <element label="Resolved" max_length="40" name="u_resolved_at" type="glide_date_time"/>
+        <element label="Resolved By" max_length="32" name="u_resolved_by" reference="sys_user" type="reference"/>
         <element label="Schedule Change Info" max_length="4000" name="u_schedule_change_info" type="string"/>
         <element label="VCaaS" max_length="40" name="u_vcaas" type="boolean"/>
         <element label="VCaaS Login" max_length="40" name="u_vcaas_login" type="string"/>

@@ -134,7 +134,7 @@
             <sys_class_name>sys_ui_list</sys_class_name>
             <sys_created_by>John.Knudsen</sys_created_by>
             <sys_created_on>2017-06-01 19:00:40</sys_created_on>
-            <sys_customer_update>true</sys_customer_update>
+            <sys_customer_update>false</sys_customer_update>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
             <sys_id>091a06d6134b32001c24bda12244b07b</sys_id>

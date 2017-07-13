@@ -75,7 +75,7 @@ WFMCatalogItem.prototype = {
         <sys_class_name>sys_script_include</sys_class_name>
         <sys_created_by>John.Knudsen</sys_created_by>
         <sys_created_on>2017-06-09 14:23:33</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
+        <sys_customer_update>false</sys_customer_update>
         <sys_id>ee27d67013dff2001c24bda12244b0e1</sys_id>
         <sys_mod_count>18</sys_mod_count>
         <sys_name>WFMCatalogItem</sys_name>

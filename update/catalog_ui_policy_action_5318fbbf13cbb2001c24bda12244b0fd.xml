@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <record_update table="catalog_ui_policy_action">
     <catalog_ui_policy_action action="INSERT_OR_UPDATE">
-        <catalog_item display_value="Contact Center Help">e0c19a2f13c3b2001c24bda12244b098</catalog_item>
+        <catalog_item display_value="Workforce Management">e0c19a2f13c3b2001c24bda12244b098</catalog_item>
         <catalog_variable>IO:d386633b13cbb2001c24bda12244b0ad</catalog_variable>
         <disabled>ignore</disabled>
         <field/>
@@ -9,7 +9,7 @@
         <sys_class_name>catalog_ui_policy_action</sys_class_name>
         <sys_created_by>John.Knudsen</sys_created_by>
         <sys_created_on>2017-06-06 18:52:28</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
+        <sys_customer_update>false</sys_customer_update>
         <sys_id>5318fbbf13cbb2001c24bda12244b0fd</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>cont_start_access</sys_name>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="dl_definition_rel_match">
+    <dl_definition_rel_match action="INSERT_OR_UPDATE">
+        <dl_definition display_value="WFM Priority Data Lookup">a4f78bc713d332001c24bda12244b06d</dl_definition>
+        <exact_match>false</exact_match>
+        <matcher_table>x_vivso_wfm_priority_data_lookup</matcher_table>
+        <matcher_table_field>u_impact</matcher_table_field>
+        <source_table>x_vivso_wfm_workforce_management</source_table>
+        <source_table_field>impact</source_table_field>
+        <sys_class_name>dl_definition_rel_match</sys_class_name>
+        <sys_created_by>John.Knudsen</sys_created_by>
+        <sys_created_on>2017-06-16 17:43:56</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>a1484fc713d332001c24bda12244b061</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>impact</sys_name>
+        <sys_package display_value="Workforce Management" source="x_vivso_wfm">08fd6dd2134b32001c24bda12244b038</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Workforce Management">08fd6dd2134b32001c24bda12244b038</sys_scope>
+        <sys_update_name>dl_definition_rel_match_a1484fc713d332001c24bda12244b061</sys_update_name>
+        <sys_updated_by>John.Knudsen</sys_updated_by>
+        <sys_updated_on>2017-06-16 18:12:15</sys_updated_on>
+    </dl_definition_rel_match>
+</record_update>

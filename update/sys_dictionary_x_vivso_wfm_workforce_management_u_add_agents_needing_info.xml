@@ -51,7 +51,7 @@
         <sys_class_name>sys_dictionary</sys_class_name>
         <sys_created_by>John.Knudsen</sys_created_by>
         <sys_created_on>2017-06-13 20:52:11</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
+        <sys_customer_update>false</sys_customer_update>
         <sys_id>1586d816131f76001c24bda12244b094</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>Additional Agents Needing Info</sys_name>

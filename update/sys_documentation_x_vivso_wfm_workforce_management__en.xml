@@ -1,28 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <record_update>
-    <sys_documentation element="" label="Workforce Management" language="en" table="x_vivso_wfm_workforce_management">
+    <sys_documentation element="" label="WFM Request" language="en" table="x_vivso_wfm_workforce_management">
         <sys_documentation action="INSERT_OR_UPDATE">
             <element/>
             <help/>
             <hint/>
-            <label>Workforce Management</label>
+            <label>WFM Request</label>
             <language>en</language>
             <name>x_vivso_wfm_workforce_management</name>
-            <plural>Workforce Managements</plural>
+            <plural>WFM Requests</plural>
             <sys_class_name>sys_documentation</sys_class_name>
             <sys_created_by>John.Knudsen</sys_created_by>
             <sys_created_on>2017-06-01 16:57:47</sys_created_on>
-            <sys_customer_update>false</sys_customer_update>
+            <sys_customer_update>true</sys_customer_update>
             <sys_id>41fd6516134b32001c24bda12244b0b9</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_name>Workforce Management</sys_name>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_name>WFM Request</sys_name>
             <sys_package display_value="Workforce Management" source="x_vivso_wfm">08fd6dd2134b32001c24bda12244b038</sys_package>
             <sys_policy/>
             <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
             <sys_scope display_value="Workforce Management">08fd6dd2134b32001c24bda12244b038</sys_scope>
             <sys_update_name>sys_documentation_x_vivso_wfm_workforce_management__en</sys_update_name>
-            <sys_updated_by>John.Knudsen</sys_updated_by>
-            <sys_updated_on>2017-06-01 16:57:47</sys_updated_on>
+            <sys_updated_by>erik.stolberg</sys_updated_by>
+            <sys_updated_on>2017-07-12 23:25:20</sys_updated_on>
             <url/>
             <url_target/>
         </sys_documentation>

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="u_priority" table="x_vivso_wfm_priority_data_lookup" version="3">
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_priority</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>1 - Critical</label>
+            <language>en</language>
+            <name>x_vivso_wfm_priority_data_lookup</name>
+            <sequence>0</sequence>
+            <sys_created_by>John.Knudsen</sys_created_by>
+            <sys_created_on>2017-06-16 17:50:31</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>77d94b0b13d332001c24bda12244b06d</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>John.Knudsen</sys_updated_by>
+            <sys_updated_on>2017-06-16 21:00:01</sys_updated_on>
+            <value>1</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_priority</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>2 - High</label>
+            <language>en</language>
+            <name>x_vivso_wfm_priority_data_lookup</name>
+            <sequence>1</sequence>
+            <sys_created_by>John.Knudsen</sys_created_by>
+            <sys_created_on>2017-06-16 17:50:31</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>7fd94b0b13d332001c24bda12244b06d</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>John.Knudsen</sys_updated_by>
+            <sys_updated_on>2017-06-16 21:00:01</sys_updated_on>
+            <value>2</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_priority</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>3 - Moderate</label>
+            <language>en</language>
+            <name>x_vivso_wfm_priority_data_lookup</name>
+            <sequence>2</sequence>
+            <sys_created_by>John.Knudsen</sys_created_by>
+            <sys_created_on>2017-06-16 17:50:31</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>c0e94b0b13d332001c24bda12244b06e</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>John.Knudsen</sys_updated_by>
+            <sys_updated_on>2017-06-16 21:00:01</sys_updated_on>
+            <value>3</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_priority</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>4 - Low</label>
+            <language>en</language>
+            <name>x_vivso_wfm_priority_data_lookup</name>
+            <sequence>3</sequence>
+            <sys_created_by>John.Knudsen</sys_created_by>
+            <sys_created_on>2017-06-16 17:50:31</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>48e94b0b13d332001c24bda12244b06e</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>John.Knudsen</sys_updated_by>
+            <sys_updated_on>2017-06-16 21:00:01</sys_updated_on>
+            <value>4</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_priority</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>5 - Planning</label>
+            <language>en</language>
+            <name>x_vivso_wfm_priority_data_lookup</name>
+            <sequence>4</sequence>
+            <sys_created_by>John.Knudsen</sys_created_by>
+            <sys_created_on>2017-06-16 17:50:31</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>cce94b0b13d332001c24bda12244b06e</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>John.Knudsen</sys_updated_by>
+            <sys_updated_on>2017-06-16 21:00:01</sys_updated_on>
+            <value>5</value>
+        </sys_choice>
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>u_priority</element>
+            <name>x_vivso_wfm_priority_data_lookup</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>John.Knudsen</sys_created_by>
+            <sys_created_on>2017-06-16 17:50:31</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_id>bbd94b0b13d332001c24bda12244b06d</sys_id>
+            <sys_mod_count>11</sys_mod_count>
+            <sys_name>u_priority</sys_name>
+            <sys_package display_value="Workforce Management" source="x_vivso_wfm">08fd6dd2134b32001c24bda12244b038</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="Workforce Management">08fd6dd2134b32001c24bda12244b038</sys_scope>
+            <sys_update_name>sys_choice_x_vivso_wfm_priority_data_lookup_u_priority</sys_update_name>
+            <sys_updated_by>John.Knudsen</sys_updated_by>
+            <sys_updated_on>2017-06-16 21:00:01</sys_updated_on>
+        </sys_choice_set>
+    </sys_choice>
+</record_update>

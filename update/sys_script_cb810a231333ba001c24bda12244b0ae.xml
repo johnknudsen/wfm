@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update sys_domain="global" table="sys_script">
+    <sys_script action="INSERT_OR_UPDATE">
+        <abort_action>false</abort_action>
+        <access>package_private</access>
+        <action_delete>false</action_delete>
+        <action_insert>true</action_insert>
+        <action_query>false</action_query>
+        <action_update>true</action_update>
+        <active>true</active>
+        <add_message>false</add_message>
+        <advanced>true</advanced>
+        <change_fields>false</change_fields>
+        <client_callable>false</client_callable>
+        <collection>x_vivso_wfm_workforce_management</collection>
+        <condition/>
+        <description/>
+        <execute_function>false</execute_function>
+        <filter_condition table="x_vivso_wfm_workforce_management">state=4^ORstate=5^EQ<item endquery="false" field="state" goto="false" newquery="false" operator="=" or="false" value="4"/>
+            <item endquery="false" field="state" goto="false" newquery="false" operator="=" or="true" value="5"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </filter_condition>
+        <is_rest>false</is_rest>
+        <message/>
+        <name>Duration Calcs</name>
+        <order>100</order>
+        <priority>100</priority>
+        <rest_method/>
+        <rest_method_text/>
+        <rest_service/>
+        <rest_service_text/>
+        <rest_variables/>
+        <role_conditions/>
+        <script><![CDATA[(function executeRule(current, previous /*null when async*/) {
+	if (current.u_resolved_by.nil())
+		current.u_resolved_by = gs.getUserID();
+	if (current.u_resolved_at.nil())
+		current.u_resolved_at = new GlideDateTime().getDisplayValue();
+	
+	// Update the fields that indicate the time and duration of this incident from open to resolve.
+	// Keep track of duration as a glide_duration value (dd hh:mm:ss) and as a pure number of seconds.
+	// Both calendar time and business time are maintained.
+	
+	//    var dataChange = current.opened_at.changes() || current.u_resolved_at.changes();
+	//    var opened = current.opened_at.getDisplayValue();
+	//    var resolved = current.u_resolved_at.getDisplayValue();
+	
+	//    if (dataChange || current.business_duration.nil())
+	//       current.business_duration = gs.calDateDiff(opened, resolved, false);
+	
+	//    if (dataChange || current.calendar_duration.nil())
+	//       current.calendar_duration = gs.dateDiff(opened, resolved, false);
+	
+// 	var opened = new GlideDateTime(current.opened_at);
+// 	var closed = new GlideDateTime(current.u_resolved_at);
+// 	var schedule = new GlideSchedule('7afa1a324f9fb200d59d76601310c763', gs.getProperty('glide.sys.default.tz'));
+// 	var dur = GlideDateTime.subtract(opened, closed);
+// 	current.calendar_duration = dur;
+// 	current.business_duration = schedule.duration(opened, closed);
+	
+})(current, previous);]]></script>
+        <sys_class_name>sys_script</sys_class_name>
+        <sys_created_by>John.Knudsen</sys_created_by>
+        <sys_created_on>2017-07-12 22:32:50</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>cb810a231333ba001c24bda12244b0ae</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>Duration Calcs</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Workforce Management" source="x_vivso_wfm">08fd6dd2134b32001c24bda12244b038</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Workforce Management">08fd6dd2134b32001c24bda12244b038</sys_scope>
+        <sys_update_name>sys_script_cb810a231333ba001c24bda12244b0ae</sys_update_name>
+        <sys_updated_by>John.Knudsen</sys_updated_by>
+        <sys_updated_on>2017-07-13 17:20:48</sys_updated_on>
+        <template/>
+        <when>before</when>
+    </sys_script>
+    <sys_translated_text action="delete_multiple" query="documentkey=cb810a231333ba001c24bda12244b0ae"/>
+</record_update>

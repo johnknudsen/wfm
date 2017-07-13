@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_documentation element="u_priority" label="Priority" language="en" table="x_vivso_wfm_priority_data_lookup">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>u_priority</element>
+            <help/>
+            <hint/>
+            <label>Priority</label>
+            <language>en</language>
+            <name>x_vivso_wfm_priority_data_lookup</name>
+            <plural>Priorities</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>John.Knudsen</sys_created_by>
+            <sys_created_on>2017-06-16 17:32:56</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_id>5ed5c78713d332001c24bda12244b06a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Priority</sys_name>
+            <sys_package display_value="Workforce Management" source="x_vivso_wfm">08fd6dd2134b32001c24bda12244b038</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="Workforce Management">08fd6dd2134b32001c24bda12244b038</sys_scope>
+            <sys_update_name>sys_documentation_x_vivso_wfm_priority_data_lookup_u_priority_en</sys_update_name>
+            <sys_updated_by>John.Knudsen</sys_updated_by>
+            <sys_updated_on>2017-06-16 17:32:56</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

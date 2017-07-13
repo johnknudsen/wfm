@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <record_update sys_domain="global" table="sysevent_email_action">
     <sysevent_email_action action="INSERT_OR_UPDATE">
-        <action_insert>true</action_insert>
-        <action_update>false</action_update>
+        <action_insert>false</action_insert>
+        <action_update>true</action_update>
         <active>true</active>
         <advanced_condition/>
         <affected_field_on_event/>
@@ -57,7 +57,7 @@ body, a, p, li, h1, h2, h3, table, td, th {font-family: Helvetica, Arial, sans-s
                         <tr style="font-family: 'Lato', Helvetica, Arial, sans-serif; font-size: 14px; line-height: 1.6em; margin: 0; padding: 0;">
                             <td style="font-family: 'Lato', Helvetica, Arial, sans-serif; font-size: 14px; line-height: 1.6em; margin: 0; padding: 0;">
                                 <img src="http://wwwassets.s3.amazonaws.com/global/solar/home/Vivint-Solar-Logo.png" height="40" style="font-family: 'Lato', Helvetica, Arial, sans-serif; font-size: 14px; line-height: 1.6em; margin: 0; padding: 0;">
-                                <h1 style="font-family: 'Lato', Helvetica, Arial, 'Lucida Grande', sans-serif; font-size: 28px; line-height: 1.2em; color: #FF8200; font-weight: 300; margin: 40px 0 10px; padding: 0;">A request for ${number} assigned to you has been updated.</h1>
+                                <h1 style="font-family: 'Lato', Helvetica, Arial, 'Lucida Grande', sans-serif; font-size: 28px; line-height: 1.2em; color: #FF8200; font-weight: 300; margin: 40px 0 10px; padding: 0;">A request for ${URI_REF} assigned to you has been updated.</h1>
                                 <p class="larger" style="font-family: 'Lato', Helvetica, Arial, sans-serif; font-size: 18px; line-height: 1.6em; font-weight: normal; margin: 0 0 10px; padding: 0;">${mail_script:last_comment_task}</p>
                                 <br style="font-family: 'Lato', Helvetica, Arial, sans-serif; font-size: 14px; line-height: 1.6em; margin: 0; padding: 0;">
                                <table class="details" style="font-family: 'Lato', Helvetica, Arial, sans-serif; font-size: 14px; line-height: 1.6em; width: 100%; border-collapse: collapse; margin: 0; padding: 0; border: 1px solid #ddd;">
@@ -105,14 +105,14 @@ body, a, p, li, h1, h2, h3, table, td, th {font-family: Helvetica, Arial, sans-s
         <omit_watermark>false</omit_watermark>
         <order>100</order>
         <push_message_only>false</push_message_only>
-        <recipient_fields/>
+        <recipient_fields>assigned_to</recipient_fields>
         <recipient_groups/>
         <recipient_users/>
         <reply_to/>
-        <send_self>true</send_self>
+        <send_self>false</send_self>
         <sms_alternate/>
         <style/>
-        <subject/>
+        <subject>Request ${number} has been updated</subject>
         <subscribable>false</subscribable>
         <sys_class_name>sysevent_email_action</sys_class_name>
         <sys_created_by>John.Knudsen</sys_created_by>
@@ -121,7 +121,7 @@ body, a, p, li, h1, h2, h3, table, td, th {font-family: Helvetica, Arial, sans-s
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>dca0b67d13d376001c24bda12244b0bd</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>15</sys_mod_count>
         <sys_name>Task commented for assignee</sys_name>
         <sys_overrides/>
         <sys_package display_value="Workforce Management" source="x_vivso_wfm">08fd6dd2134b32001c24bda12244b038</sys_package>
@@ -130,7 +130,7 @@ body, a, p, li, h1, h2, h3, table, td, th {font-family: Helvetica, Arial, sans-s
         <sys_scope display_value="Workforce Management">08fd6dd2134b32001c24bda12244b038</sys_scope>
         <sys_update_name>sysevent_email_action_dca0b67d13d376001c24bda12244b0bd</sys_update_name>
         <sys_updated_by>John.Knudsen</sys_updated_by>
-        <sys_updated_on>2017-06-13 21:06:15</sys_updated_on>
+        <sys_updated_on>2017-07-13 17:58:18</sys_updated_on>
         <sys_version>2</sys_version>
         <template/>
         <type>email</type>

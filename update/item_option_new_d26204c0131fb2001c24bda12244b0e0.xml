@@ -3,7 +3,7 @@
     <item_option_new action="INSERT_OR_UPDATE">
         <active>true</active>
         <attributes/>
-        <cat_item display_value="Contact Center Help">e0c19a2f13c3b2001c24bda12244b098</cat_item>
+        <cat_item display_value="Workforce Management">e0c19a2f13c3b2001c24bda12244b098</cat_item>
         <category/>
         <choice_direction>down</choice_direction>
         <choice_field>u_add_agents_needing_info</choice_field>
@@ -57,7 +57,7 @@
         <sys_class_name>item_option_new</sys_class_name>
         <sys_created_by>John.Knudsen</sys_created_by>
         <sys_created_on>2017-06-06 19:39:17</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
+        <sys_customer_update>false</sys_customer_update>
         <sys_id>d26204c0131fb2001c24bda12244b0e0</sys_id>
         <sys_mod_count>4</sys_mod_count>
         <sys_name>If the same change needs to happen to multiple agents, list the remaining affected agents here</sys_name>

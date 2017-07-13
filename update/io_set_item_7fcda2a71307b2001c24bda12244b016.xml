@@ -2,11 +2,11 @@
 <record_update table="io_set_item">
     <io_set_item action="INSERT_OR_UPDATE">
         <order>50</order>
-        <sc_cat_item display_value="Contact Center Help">e0c19a2f13c3b2001c24bda12244b098</sc_cat_item>
+        <sc_cat_item display_value="Workforce Management">e0c19a2f13c3b2001c24bda12244b098</sc_cat_item>
         <sys_class_name>io_set_item</sys_class_name>
         <sys_created_by>John.Knudsen</sys_created_by>
         <sys_created_on>2017-06-05 18:49:11</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
+        <sys_customer_update>false</sys_customer_update>
         <sys_id>7fcda2a71307b2001c24bda12244b016</sys_id>
         <sys_mod_count>2</sys_mod_count>
         <sys_name>Requested for and Category.Contact Center Help</sys_name>
@@ -17,6 +17,6 @@
         <sys_update_name>io_set_item_7fcda2a71307b2001c24bda12244b016</sys_update_name>
         <sys_updated_by>John.Knudsen</sys_updated_by>
         <sys_updated_on>2017-06-05 18:50:09</sys_updated_on>
-        <variable_set display_value="Requested for and Category">de4d356713c3b2001c24bda12244b043</variable_set>
+        <variable_set display_value="First 5 Fields">de4d356713c3b2001c24bda12244b043</variable_set>
     </io_set_item>
 </record_update>

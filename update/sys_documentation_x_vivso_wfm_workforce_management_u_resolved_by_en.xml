@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_documentation element="u_resolved_by" label="Resolved By" language="en" table="x_vivso_wfm_workforce_management">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>u_resolved_by</element>
+            <help/>
+            <hint/>
+            <label>Resolved By</label>
+            <language>en</language>
+            <name>x_vivso_wfm_workforce_management</name>
+            <plural>Resolved Bys</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>John.Knudsen</sys_created_by>
+            <sys_created_on>2017-07-12 22:22:01</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_id>9e51c2231333ba001c24bda12244b04f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Resolved By</sys_name>
+            <sys_package display_value="Workforce Management" source="x_vivso_wfm">08fd6dd2134b32001c24bda12244b038</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="Workforce Management">08fd6dd2134b32001c24bda12244b038</sys_scope>
+            <sys_update_name>sys_documentation_x_vivso_wfm_workforce_management_u_resolved_by_en</sys_update_name>
+            <sys_updated_by>John.Knudsen</sys_updated_by>
+            <sys_updated_on>2017-07-12 22:22:01</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

@@ -37,7 +37,7 @@
         <mask_use_confirmation>false</mask_use_confirmation>
         <mask_use_encryption>false</mask_use_encryption>
         <name>u_requested_for</name>
-        <order/>
+        <order>10</order>
         <price_if_checked>0</price_if_checked>
         <pricing_implications>false</pricing_implications>
         <question_text>Requested For</question_text>
@@ -59,9 +59,9 @@
         <sys_class_name>item_option_new</sys_class_name>
         <sys_created_by>John.Knudsen</sys_created_by>
         <sys_created_on>2017-06-05 15:42:21</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
+        <sys_customer_update>false</sys_customer_update>
         <sys_id>f9bdf56713c3b2001c24bda12244b048</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name>Requested For</sys_name>
         <sys_package display_value="Workforce Management" source="x_vivso_wfm">08fd6dd2134b32001c24bda12244b038</sys_package>
         <sys_policy/>
@@ -69,7 +69,7 @@
         <sys_scope display_value="Workforce Management">08fd6dd2134b32001c24bda12244b038</sys_scope>
         <sys_update_name>item_option_new_f9bdf56713c3b2001c24bda12244b048</sys_update_name>
         <sys_updated_by>John.Knudsen</sys_updated_by>
-        <sys_updated_on>2017-06-05 15:42:21</sys_updated_on>
+        <sys_updated_on>2017-06-16 16:25:27</sys_updated_on>
         <table/>
         <tooltip/>
         <type>8</type>
@@ -77,7 +77,7 @@
         <use_dynamic_default>false</use_dynamic_default>
         <use_reference_qualifier>simple</use_reference_qualifier>
         <variable_name/>
-        <variable_set display_value="Requested for and Category">de4d356713c3b2001c24bda12244b043</variable_set>
+        <variable_set display_value="First 5 Fields">de4d356713c3b2001c24bda12244b043</variable_set>
         <visibility>1</visibility>
         <visible_bundle>true</visible_bundle>
         <visible_guide>true</visible_guide>
