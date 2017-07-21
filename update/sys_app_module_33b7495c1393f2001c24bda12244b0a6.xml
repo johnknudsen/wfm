@@ -17,7 +17,7 @@
         <mobile_title>Resolved</mobile_title>
         <mobile_view_name>Mobile</mobile_view_name>
         <name>x_vivso_wfm_workforce_management</name>
-        <order/>
+        <order>10</order>
         <override_menu_roles>false</override_menu_roles>
         <query/>
         <report/>
@@ -27,11 +27,11 @@
         <sys_class_name>sys_app_module</sys_class_name>
         <sys_created_by>John.Knudsen</sys_created_by>
         <sys_created_on>2017-06-07 19:19:50</sys_created_on>
-        <sys_customer_update>false</sys_customer_update>
+        <sys_customer_update>true</sys_customer_update>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>33b7495c1393f2001c24bda12244b0a6</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_name>Closed</sys_name>
         <sys_overrides/>
         <sys_package display_value="Workforce Management" source="x_vivso_wfm">08fd6dd2134b32001c24bda12244b038</sys_package>
@@ -40,7 +40,7 @@
         <sys_scope display_value="Workforce Management">08fd6dd2134b32001c24bda12244b038</sys_scope>
         <sys_update_name>sys_app_module_33b7495c1393f2001c24bda12244b0a6</sys_update_name>
         <sys_updated_by>John.Knudsen</sys_updated_by>
-        <sys_updated_on>2017-06-14 20:11:48</sys_updated_on>
+        <sys_updated_on>2017-07-21 15:25:21</sys_updated_on>
         <timeline_page/>
         <title>Closed</title>
         <u_basic_module/>
