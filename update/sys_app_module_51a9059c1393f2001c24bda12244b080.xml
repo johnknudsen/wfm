@@ -18,7 +18,7 @@
         <mobile_title>Workforce Unassigned</mobile_title>
         <mobile_view_name>Mobile</mobile_view_name>
         <name>x_vivso_wfm_workforce_management</name>
-        <order>65</order>
+        <order>70</order>
         <override_menu_roles>false</override_menu_roles>
         <query/>
         <report/>
@@ -32,7 +32,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>51a9059c1393f2001c24bda12244b080</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>4</sys_mod_count>
         <sys_name>Unassigned</sys_name>
         <sys_overrides/>
         <sys_package display_value="Workforce Management" source="x_vivso_wfm">08fd6dd2134b32001c24bda12244b038</sys_package>
@@ -41,7 +41,7 @@
         <sys_scope display_value="Workforce Management">08fd6dd2134b32001c24bda12244b038</sys_scope>
         <sys_update_name>sys_app_module_51a9059c1393f2001c24bda12244b080</sys_update_name>
         <sys_updated_by>John.Knudsen</sys_updated_by>
-        <sys_updated_on>2017-07-21 15:35:14</sys_updated_on>
+        <sys_updated_on>2017-07-21 16:07:59</sys_updated_on>
         <timeline_page/>
         <title>Unassigned</title>
         <u_basic_module/>
