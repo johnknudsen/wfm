@@ -66,7 +66,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>cb810a231333ba001c24bda12244b0ae</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>5</sys_mod_count>
         <sys_name>Duration Calcs</sys_name>
         <sys_overrides/>
         <sys_package display_value="Workforce Management" source="x_vivso_wfm">08fd6dd2134b32001c24bda12244b038</sys_package>
@@ -75,7 +75,7 @@
         <sys_scope display_value="Workforce Management">08fd6dd2134b32001c24bda12244b038</sys_scope>
         <sys_update_name>sys_script_cb810a231333ba001c24bda12244b0ae</sys_update_name>
         <sys_updated_by>John.Knudsen</sys_updated_by>
-        <sys_updated_on>2017-07-13 17:20:48</sys_updated_on>
+        <sys_updated_on>2017-07-24 21:19:17</sys_updated_on>
         <template/>
         <when>before</when>
     </sys_script>

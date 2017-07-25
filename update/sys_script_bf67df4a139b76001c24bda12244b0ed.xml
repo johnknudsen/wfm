@@ -38,11 +38,11 @@
         <sys_class_name>sys_script</sys_class_name>
         <sys_created_by>John.Knudsen</sys_created_by>
         <sys_created_on>2017-06-13 16:17:12</sys_created_on>
-        <sys_customer_update>false</sys_customer_update>
+        <sys_customer_update>true</sys_customer_update>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>bf67df4a139b76001c24bda12244b0ed</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_name>Closed - Active is False</sys_name>
         <sys_overrides/>
         <sys_package display_value="Workforce Management" source="x_vivso_wfm">08fd6dd2134b32001c24bda12244b038</sys_package>
@@ -51,7 +51,7 @@
         <sys_scope display_value="Workforce Management">08fd6dd2134b32001c24bda12244b038</sys_scope>
         <sys_update_name>sys_script_bf67df4a139b76001c24bda12244b0ed</sys_update_name>
         <sys_updated_by>John.Knudsen</sys_updated_by>
-        <sys_updated_on>2017-06-13 16:43:25</sys_updated_on>
+        <sys_updated_on>2017-07-24 21:20:49</sys_updated_on>
         <template>active=false^EQ</template>
         <when>before</when>
     </sys_script>

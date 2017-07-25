@@ -45,6 +45,7 @@
         <sc_ic_item_staging/>
         <sc_ic_version/>
         <script><![CDATA[new x_vivso_wfm.WFMCatalogItem().catItemSubmit(current, producer, gs);
+current.contact_type = 'self_service';
 producer.redirect='wfm_requests.do';
 gs.addInfoMessage('Your request has been logged');]]></script>
         <short_description/>
@@ -54,7 +55,7 @@ gs.addInfoMessage('Your request has been logged');]]></script>
         <sys_created_on>2017-06-05 17:07:40</sys_created_on>
         <sys_customer_update>true</sys_customer_update>
         <sys_id>e0c19a2f13c3b2001c24bda12244b098</sys_id>
-        <sys_mod_count>9</sys_mod_count>
+        <sys_mod_count>10</sys_mod_count>
         <sys_name>Workforce Management</sys_name>
         <sys_package display_value="Workforce Management" source="x_vivso_wfm">08fd6dd2134b32001c24bda12244b038</sys_package>
         <sys_policy/>
@@ -62,7 +63,7 @@ gs.addInfoMessage('Your request has been logged');]]></script>
         <sys_scope display_value="Workforce Management">08fd6dd2134b32001c24bda12244b038</sys_scope>
         <sys_update_name>sc_cat_item_producer_e0c19a2f13c3b2001c24bda12244b098</sys_update_name>
         <sys_updated_by>John.Knudsen</sys_updated_by>
-        <sys_updated_on>2017-07-13 14:48:49</sys_updated_on>
+        <sys_updated_on>2017-07-24 16:25:33</sys_updated_on>
         <table_name>x_vivso_wfm_workforce_management</table_name>
         <template/>
         <type>item</type>

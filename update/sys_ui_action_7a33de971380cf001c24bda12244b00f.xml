@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update sys_domain="global" table="sys_ui_action">
+    <sys_ui_action action="INSERT_OR_UPDATE">
+        <action_name>wfm_2_sd</action_name>
+        <active>true</active>
+        <client>true</client>
+        <comments/>
+        <condition>current.state!="4" &amp;&amp; current.state!="5"</condition>
+        <form_action>true</form_action>
+        <form_button>false</form_button>
+        <form_context_menu>false</form_context_menu>
+        <form_link>true</form_link>
+        <hint>Creates Service Desk incident and closes WFM Request</hint>
+        <list_action>false</list_action>
+        <list_banner_button>false</list_banner_button>
+        <list_button>false</list_button>
+        <list_choice>false</list_choice>
+        <list_context_menu>false</list_context_menu>
+        <list_link>false</list_link>
+        <list_save_with_form_button>false</list_save_with_form_button>
+        <name>Send to Service Desk</name>
+        <onclick>wfm2SD()</onclick>
+        <order>100</order>
+        <script><![CDATA[function wfm2SD() {
+	var msg = confirm("Send to Service Desk? This will auto-resolve this request.");
+	if (msg == false) {
+		return false;  //Abort submission
+	}
+	
+	gsftSubmit(null, g_form.getFormElement(), 'wfm_2_sd'); //MUST call the 'Action name' set in this UI Action
+}
+
+//Code that runs without 'onclick'
+//Ensure call to server-side function with no browser errors
+if (typeof window == 'undefined')
+	serverActions();
+
+function serverActions() {
+	/* Create incident record */
+	var inc = new GlideRecord("incident");
+	inc.short_description = "Software install needed for " + current.u_requested_for.getDisplayValue() + ".";
+	inc.contact_type = current.contact_type;
+	inc.caller_id = current.u_requested_for;
+	inc.description = current.description;
+	inc.comments = current.comments;
+	inc.watch_list = current.watch_list;
+	inc.work_notes = "Created from Workforce Management Request " + current.number + ".";
+	inc.work_notes += current.work_notes;
+	inc.assignment_group = '1678375e4f7b1a0063d4650f0310c7c7'; // ID = SD 2
+	inc.category = 'software';
+	inc.cmdb_ci = '5bcabed84f68820063d4650f0310c790';
+	var incSysID = inc.insert();
+	
+	//Copy any attachments from sales concierge to incident
+	//  	GlideSysAttachment.copy('x_vivso_wfm_workforce_management', current.sys_id, 'incident', incSysID);
+	copyAttachments('x_vivso_wfm_workforce_management', current.sys_id, 'incident', incSysID);
+	
+	/*
+	Requires read and create application access to all scopes on sys_attachment and sys_attachment_doc tables
+ 	*/
+	function copyAttachments(sourceTable, sourceID, targetTable, targetID) {
+		var att = new GlideRecord("sys_attachment");
+		var userImagePrefix = "ZZ_YY";
+		var tables = [sourceTable, userImagePrefix + sourceTable];
+		att.addQuery("table_name", tables);
+		att.addQuery("table_sys_id", sourceID);
+		att.query();
+		gs.info(att.getEncodedQuery());
+		gs.info("copying " + att.getRowCount());
+		
+		while (att.next()) {
+			//copy attachment record
+			var oldSysID = att.getUniqueValue();
+			var targetName = targetTable;
+			var sourceName = att.getValue("table_name");
+			if (sourceName.startsWith(userImagePrefix))
+				targetName = userImagePrefix + targetTable;
+			
+			att.setValue("table_name", targetName);
+			att.setValue("table_sys_id", targetID);
+			var newSysID = att.insert();
+			
+			//copy attachment doc records
+			var doc = new GlideRecord("sys_attachment_doc");
+			doc.addQuery("sys_attachment", oldSysID);
+			doc.query();
+			while (doc.next()) {
+				doc.setValue("sys_attachment", newSysID);
+				doc.insert();
+			}
+		}
+	}
+	
+	/* Update WFM Request record */
+	current.close_notes = "This request has been transferred to Service Desk (" + inc.number + ") for further assistance. As such, this request will be closed.";
+	current.state = 4;
+	if(current.assigned_to == '') {
+		current.assigned_to = gs.getUserID();
+	}
+	current.update();
+}]]></script>
+        <show_insert>false</show_insert>
+        <show_multiple_update>false</show_multiple_update>
+        <show_query>false</show_query>
+        <show_update>true</show_update>
+        <sys_class_name>sys_ui_action</sys_class_name>
+        <sys_created_by>John.Knudsen</sys_created_by>
+        <sys_created_on>2017-07-24 15:31:57</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>7a33de971380cf001c24bda12244b00f</sys_id>
+        <sys_mod_count>11</sys_mod_count>
+        <sys_name>Send to Service Desk</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Workforce Management" source="x_vivso_wfm">08fd6dd2134b32001c24bda12244b038</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Workforce Management">08fd6dd2134b32001c24bda12244b038</sys_scope>
+        <sys_update_name>sys_ui_action_7a33de971380cf001c24bda12244b00f</sys_update_name>
+        <sys_updated_by>John.Knudsen</sys_updated_by>
+        <sys_updated_on>2017-07-24 17:40:12</sys_updated_on>
+        <table>x_vivso_wfm_workforce_management</table>
+        <ui11_compatible>true</ui11_compatible>
+        <ui16_compatible>true</ui16_compatible>
+    </sys_ui_action>
+</record_update>

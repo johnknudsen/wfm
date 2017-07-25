@@ -35,7 +35,7 @@
 autoCloseRequests();
 
 function autoCloseRequests() {
-	var ps = gs.getProperty('glide.ui.autoclose.time.WFM');
+	var ps = gs.getProperty('x_vivso_wfm.glide.ui.autoclose.time.WFM');
 	var pn = parseInt(ps);
 	var queryTime = new GlideDateTime();
 	queryTime.addDaysUTC(-pn);
@@ -56,11 +56,11 @@ function autoCloseRequests() {
         <sys_class_name>sys_script</sys_class_name>
         <sys_created_by>John.Knudsen</sys_created_by>
         <sys_created_on>2017-06-13 20:00:36</sys_created_on>
-        <sys_customer_update>false</sys_customer_update>
+        <sys_customer_update>true</sys_customer_update>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>ebbac012131f76001c24bda12244b07a</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_name>WFM Auto Close</sys_name>
         <sys_overrides/>
         <sys_package display_value="Workforce Management" source="x_vivso_wfm">08fd6dd2134b32001c24bda12244b038</sys_package>
@@ -69,7 +69,7 @@ function autoCloseRequests() {
         <sys_scope display_value="Workforce Management">08fd6dd2134b32001c24bda12244b038</sys_scope>
         <sys_update_name>sys_script_ebbac012131f76001c24bda12244b07a</sys_update_name>
         <sys_updated_by>John.Knudsen</sys_updated_by>
-        <sys_updated_on>2017-06-13 20:00:36</sys_updated_on>
+        <sys_updated_on>2017-07-25 16:05:29</sys_updated_on>
         <template/>
         <when>before</when>
     </sys_script>
