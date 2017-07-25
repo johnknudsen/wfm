@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <database>
-    <element audit="true" extends="service_task" label="WFM Request" max_length="40" name="x_vivso_wfm_workforce_management" sizeclass="35" type="collection">
+    <element audit="true" extends="service_task" label="WFM Request" max_length="40" name="x_vivso_wfm_workforce_management" sizeclass="44" type="collection">
         <element label="Additional Agents Needing Info" max_length="4000" name="u_add_agents_needing_info" reference="sys_user" type="glide_list"/>
         <element label="Auto-Attendant" max_length="40" name="u_auto_attendant" type="boolean"/>
         <element label="inContact" max_length="40" name="u_incontact" type="boolean"/>
