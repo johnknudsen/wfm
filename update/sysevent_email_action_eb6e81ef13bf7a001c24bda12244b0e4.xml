@@ -118,7 +118,7 @@ body, a, p, li, h1, h2, h3, table, td, th {font-family: Helvetica, Arial, sans-s
         <send_self>false</send_self>
         <sms_alternate/>
         <style/>
-        <subject>Request ${number} has been Resolved</subject>
+        <subject>Request ${number} has been Closed</subject>
         <subscribable>false</subscribable>
         <sys_class_name>sysevent_email_action</sys_class_name>
         <sys_created_by>John.Knudsen</sys_created_by>
@@ -127,7 +127,7 @@ body, a, p, li, h1, h2, h3, table, td, th {font-family: Helvetica, Arial, sans-s
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>eb6e81ef13bf7a001c24bda12244b0e4</sys_id>
-        <sys_mod_count>11</sys_mod_count>
+        <sys_mod_count>13</sys_mod_count>
         <sys_name>Task closed for user</sys_name>
         <sys_overrides/>
         <sys_package display_value="Workforce Management" source="x_vivso_wfm">08fd6dd2134b32001c24bda12244b038</sys_package>
@@ -136,7 +136,7 @@ body, a, p, li, h1, h2, h3, table, td, th {font-family: Helvetica, Arial, sans-s
         <sys_scope display_value="Workforce Management">08fd6dd2134b32001c24bda12244b038</sys_scope>
         <sys_update_name>sysevent_email_action_eb6e81ef13bf7a001c24bda12244b0e4</sys_update_name>
         <sys_updated_by>John.Knudsen</sys_updated_by>
-        <sys_updated_on>2017-07-13 17:56:54</sys_updated_on>
+        <sys_updated_on>2017-08-21 14:57:46</sys_updated_on>
         <sys_version>2</sys_version>
         <template/>
         <type>email</type>
